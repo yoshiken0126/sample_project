@@ -6,7 +6,7 @@ function App() {
   const[boardgames,setBoardgames] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/api/boardgame/')
+    axios.get('https://sample-project-1-bteu.onrender.com/api/boardgame/')
       .then(response => {
         setBoardgames(response.data);
       })
