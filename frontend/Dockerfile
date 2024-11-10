@@ -3,4 +3,5 @@ RUN mkdir /frontend
 COPY ./ /frontend
 WORKDIR /frontend
 RUN yarn global add npm@latest && yarn add create-next-app && yarn add axios
+RUN yarn build
 CMD ["yarn", "start"]
